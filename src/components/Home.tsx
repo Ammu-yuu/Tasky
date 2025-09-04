@@ -1,9 +1,18 @@
+// import '../index.css';
+import 'tailwindcss';
+import image from "../assets/image.png";
+
 export default function Home() {
     return (
-        <div className="bottom-full flex items-end justify-center pb-10">
-            <button className="px-6 py-3 bg-pink-100 text-gray-800 font-bold border border-pink-300 shadow-md hover:bg-pink-200 transition rounded">
-                Press to Start
-            </button>
-        </div>
+        <main>
+            <div style={{ display: "flex", justifyContent: "center", alignItems: "center" }}>
+                <img src={image} alt="image" style = {{ width:"400px", height:"auto", display: "block", marginTop: "50px"}}/>
+            </div>
+            <div className="p-20 flex items-end justify-center pb-10" style={{marginTop: "50px"}}>
+                <button className="bg-pink-100 text-gray-800 font-bold border border-pink-300 shadow-md hover:bg-pink-200 transition rounded">
+                    Press to Start
+                </button>
+            </div>
+        </main>
     );
 }
