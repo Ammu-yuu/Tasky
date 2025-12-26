@@ -1,5 +1,6 @@
 import {useState} from 'react';
 import { useNavigate } from "react-router-dom";
+import { MotivationalBar } from '../components/motivationalBar';
 
 export default function Main() {
     const navigate = useNavigate();
@@ -44,6 +45,7 @@ export default function Main() {
                                 {item}
                             </span>
                         </div>
+                        
                     ))}
                     </div>
                 </div>

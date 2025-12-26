@@ -12,7 +12,7 @@ export default function AddTaskModal({
   onSubmit,
 }: AddTaskModalProps) {
   return (
-    <div className="fixed inset-0 flex items-center justify-center bg-black/50 z-[999]">
+    <div className="fixed inset-0 flex items-center justify-center bg-black/50">
       {/* Modal box */}
       <div className="bg-white rounded-2xl p-6 w-80 shadow-xl">
         <h2 className="text-xl font-semibold mb-4 text-black">Add New Task</h2>

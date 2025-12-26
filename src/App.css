@@ -1,3 +1,5 @@
+/* @import '@fontsource/press-start-2p'; */
+
 @import "tailwindcss";
 
 
@@ -22,6 +24,20 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
+
+      /* Pixel art specific tokens */
+    --pixel-shadow: 280 20% 30%;
+    --pixel-highlight: 45 50% 98%;
+    --pixel-pink: 350 70% 65%;
+    --pixel-mint: 170 50% 70%;
+    --pixel-lavender: 270 50% 75%;
+    --pixel-yellow: 45 80% 70%;
+    --pixel-green: 140 50% 60%;
+    --primary: #FB6C90;
+    --foreground: #D9D9D9;
+    --light: #FBC0C0;
+
+
 }
 body {
   height: 100vh;
