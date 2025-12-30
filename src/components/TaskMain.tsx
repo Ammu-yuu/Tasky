@@ -1,6 +1,8 @@
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { TbHttpDelete } from "react-icons/tb";
+import { MdSaveAlt } from "react-icons/md";
+import { MdFormatListBulletedAdd } from "react-icons/md";
 import { SiGoogletasks } from "react-icons/si";
 import { CategorySidebar } from "./CategorySlidebar";
 import { CATEGORIES } from "../types/task";
@@ -123,10 +125,10 @@ export default function TaskMain() {
               onClick={() => setShowAddModal(true)}
               className="flex-1 border-4 border-(--primaryLight) bg-(--primary) py-3 text-sm font-bold text-(--textMain) shadow-sm"
             >
-              ＋ Add New Task
+              <MdFormatListBulletedAdd className="inline-block mr-2" /> Add New Task
             </button>
             <button className="flex-1 border-4 border-(--primaryLight) bg-(--primary) py-3 text-sm font-bold text-(--textMain) shadow-sm">
-              💾 Save Progress
+              <MdSaveAlt className="inline-block mr-2" /> Save Progress
             </button>
           </div>
 

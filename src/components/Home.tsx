@@ -1,3 +1,4 @@
+
 import image from "../assets/image.png";
 import { useNavigate } from "react-router-dom";
 
