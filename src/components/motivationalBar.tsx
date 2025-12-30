@@ -34,26 +34,26 @@ export const MotivationalBar = ({
 
   return (
     <div className="mt-6 flex justify-center">
-      <div className="w-full max-w-3xl border-4 border-[#4b2f5a] bg-[#c79af7] px-4 py-3">
+      <div className="w-full max-w-5xl rounded-xl bg-(--secondary) px-4 py-3">
         {/* Top row: message + count */}
         <div className="flex items-center justify-between mb-2">
-          <p className="text-xs font-semibold text-[#2c1436] tracking-wide">
+          <p className="text-xs font-semibold text-(--textMain) tracking-wide">
             {message}
           </p>
-          <p className="text-xs font-semibold text-[#2c1436] tracking-wide">
+          <p className="text-xs font-semibold text-(--textMain) tracking-wide">
             {completedCount}/{totalCount} done
           </p>
         </div>
 
         {/* Progress track */}
-        <div className="h-4 bg-[#e8e4d8] border border-[#d1cbb8]">
+        <div className="h-4 bg-(--primary) border border-(--borderMain)">
           <div
-            className="h-full bg-[#f27092] flex items-center justify-end transition-all duration-500"
+            className="h-full bg-(--primaryLight) flex items-center justify-end transition-all duration-500"
             style={{ width: `${progress}%` }}
           >
             {progress > 5 && (
-              <span className="text-[10px] mr-1">
-                <BsEmojiHeartEyesFill className="text-[#ffddf0]" />
+              <span className="text-[20px] mr-1">
+                <BsEmojiHeartEyesFill className="text-(--textMain)" />
               </span>
             )}
           </div>

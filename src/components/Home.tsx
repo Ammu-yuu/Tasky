@@ -11,7 +11,7 @@ export default function Home() {
             </div>
             <div className="p-20 flex items-end justify-center pb-10" style={{marginTop: "50px"}}>
                 <button
-                    className="bg-pink-100 text-gray-800 font-bold border border-pink-300 shadow-md hover:bg-pink-200 transition rounded"
+                    className="bg-(--primaryLight) text-(--textMain) font-bold border border-(--borderMain) shadow-md hover:bg-(--primary) transition rounded"
                     onClick={() => navigate("/main")}
                 >
                     Press to Start

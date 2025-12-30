@@ -1,5 +1,3 @@
-/* @import '@fontsource/press-start-2p'; */
-
 @import "tailwindcss";
 
 
@@ -25,18 +23,14 @@
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
 
-      /* Pixel art specific tokens */
-    --pixel-shadow: 280 20% 30%;
-    --pixel-highlight: 45 50% 98%;
-    --pixel-pink: 350 70% 65%;
-    --pixel-mint: 170 50% 70%;
-    --pixel-lavender: 270 50% 75%;
-    --pixel-yellow: 45 80% 70%;
-    --pixel-green: 140 50% 60%;
-    --primary: #FB6C90;
-    --foreground: #D9D9D9;
-    --light: #FBC0C0;
-
+/* Theme colors */
+  --primary: #FB6C90;         /* main accent (buttons, highlights) */
+  --primaryLight: #FBC0C0;    /* soft backgrounds, hovers */
+  --secondary: #C79AF7;       /* cards / panels */
+  --borderMain: #4B2F5A;      /* frames, separators */
+  --textMain: #2B1B33;        /* main text */
+  --textMuted: #6A4A7A;       /* secondary text */
+  --overlay: rgba(0, 0, 0, 0.35); /* modal backgrounds */
 
 }
 body {
@@ -46,6 +40,18 @@ body {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  font-family: "Supreme", system-ui, sans-serif; 
+}
+.heading-technor {
+  font-family: "Technor", system-ui, sans-serif;
+}
+
+.khand-text {
+  font-family: "Khand", sans-serif;
+}
+
+.array-text {
+  font-family: "Array", sans-serif;
 }
 
 html, body, #root {
@@ -110,11 +116,11 @@ button {
   cursor: pointer;
 }
 
-/* button:hover {
-  border-color: lightpink;
-} */
+button:hover {
+  border-color: var(--primary);
+  background-color: var(--primary);
+}
 button:active {
-  border-color: #396cd8;
   background-color: #e8e8e8;
 }
 

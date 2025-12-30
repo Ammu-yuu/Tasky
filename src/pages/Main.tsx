@@ -1,6 +1,6 @@
 import {useState} from 'react';
 import { useNavigate } from "react-router-dom";
-import { MotivationalBar } from '../components/motivationalBar';
+// import { MotivationalBar } from '../components/motivationalBar';
 
 export default function Main() {
     const navigate = useNavigate();
