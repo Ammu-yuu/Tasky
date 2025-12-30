@@ -1,3 +1,6 @@
+@import "tailwindcss";
+
+
 .logo.vite:hover {
   filter: drop-shadow(0 0 2em #747bff);
 }
@@ -19,7 +22,42 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
+
+/* Theme colors */
+  --primary: #FB6C90;         /* main accent (buttons, highlights) */
+  --primaryLight: #FBC0C0;    /* soft backgrounds, hovers */
+  --secondary: #C79AF7;       /* cards / panels */
+  --borderMain: #4B2F5A;      /* frames, separators */
+  --textMain: #2B1B33;        /* main text */
+  --textMuted: #6A4A7A;       /* secondary text */
+  --overlay: rgba(0, 0, 0, 0.35); /* modal backgrounds */
+
 }
+body {
+  height: 100vh;
+  margin: 0;
+  background-image: url('/src/assets/bg.png'); /* Vite uses /src as root */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  font-family: "Supreme", system-ui, sans-serif; 
+}
+.heading-technor {
+  font-family: "Technor", system-ui, sans-serif;
+}
+
+.khand-text {
+  font-family: "Khand", sans-serif;
+}
+
+.array-text {
+  font-family: "Array", sans-serif;
+}
+
+html, body, #root {
+  height: 100%;
+}
+
 
 .container {
   margin: 0;
@@ -53,7 +91,7 @@ a {
 }
 
 a:hover {
-  color: #535bf2;
+  color: lightpink;
 }
 
 h1 {
@@ -79,10 +117,10 @@ button {
 }
 
 button:hover {
-  border-color: #396cd8;
+  border-color: var(--primary);
+  background-color: var(--primary);
 }
 button:active {
-  border-color: #396cd8;
   background-color: #e8e8e8;
 }
 
