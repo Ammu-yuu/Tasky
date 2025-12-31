@@ -10,7 +10,11 @@ function App() {
 
   return (
       <BrowserRouter>
-      <div className="h-screen">
+      {/* Background layer */}
+      <div className="bg-container" />
+
+      {/* Foreground content */}
+      <div className="container-inner h-screen relative">
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/main" element={<TaskMain />} />
