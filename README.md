@@ -21,6 +21,17 @@ Tasky is a simple desktop task manager built with React and Tauri. It lets you c
 
 ---
 
+
+## 📸 Screenshots
+
+### Main Screen
+![Main Screen]
+ 
+ <img width="2638" height="1558" alt="image" src="https://github.com/user-attachments/assets/9a3a5812-c4b1-4e40-abee-eab38dc8aebf" />
+
+
+---------
+
 ## Getting Started
 
 ### Prerequisites
